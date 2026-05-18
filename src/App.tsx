@@ -133,21 +133,21 @@ const ReferenceProjects = () => (
         {[
           { 
             title: "Villa Copenhagen", 
-            description: "Totalrenovering af facade og trapper i originale mursten.", 
-            image: "/modern_facade_1779033331313.png",
-            tag: "Facade"
+            description: "Fornyelse af glød og elasticitet med dybdegående ansigtsbehandling.", 
+            image: "/hero_bg_sm.png",
+            tag: "Hudpleje"
           },
           { 
             title: "Østerbro Lejlighed", 
-            description: "Eksklusivt badeværelse med sildebensfliser og microcement.", 
+            description: "Luksuriøs kropsbehandling med æteriske olier og varmestensmassage.", 
             image: "/products_sm.png",
-            tag: "Badeværelse"
+            tag: "Kropsbehandling"
           },
           { 
-            title: "Moderne Tilbygning", 
-            description: "Opførelse af 60m2 tilbygning i harmoni med hovedhusets arkitektur.", 
+            title: "Moderne Makeover", 
+            description: "Komplet forvandling med vores signatur makeover-pakke.", 
             image: "/products_sm.png",
-            tag: "Tilbygning"
+            tag: "Makeover"
           }
         ].map((project, i) => (
           <motion.div 
@@ -187,7 +187,7 @@ const HistorySection = () => (
           <div className="absolute -top-10 -left-10 w-40 h-40 border border-white/10 z-0" />
           <img 
             src="/facial_sm.png" 
-            alt="Simon og Christian Banh — Ejerne af firmaet" 
+            alt="Susanne Melchiorsen — Ejer af klinikken" 
             className="relative z-10 w-full rounded-none transition-all duration-1000 border border-white/5"
             referrerPolicy="no-referrer"
             crossOrigin="anonymous"
@@ -206,7 +206,7 @@ const HistorySection = () => (
             Gennemsigtighed er <span className="italic text-clay-accent">vores grundsten</span>
           </h2>
           <p className="text-xl text-white/70 mb-8 leading-relaxed font-light">
-            Vi er Simon og Christian Banh – to brødre med en fælles passion for det gode håndværk. Efter 10 år som ansatte i store firmaer, besluttede vi at starte Susanne Melchiorsen for at bringe stoltheden og den personlige kontakt tilbage til murerfaget.
+            Jeg er Susanne Melchiorsen – passioneret kosmetolog med en kærlighed for naturlig skønhed. Efter mange år i skønhedsbranchen besluttede jeg at starte min egen klinik for at bringe nærvær og skræddersyede behandlinger i fokus.
           </p>
           <div className="space-y-6 mb-12">
             {[
@@ -239,9 +239,9 @@ const PricingTable = () => (
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {[
-          { title: "Servicebesøg", price: "795,-", desc: "Mindre reparationer, kig efter fliser, fugeskift.", unit: "inkl. moms / time" },
-          { title: "Badeværelse", price: "fra 85.000,-", desc: "Totalrenovering inkl. VVS og El.", unit: "gennemsnitspris" },
-          { title: "Indkørsel", price: "750,-", desc: "Lægning af fliser/sten inkl. forarbejde.", unit: "pr. m2" }
+          { title: "Konsultation", price: "795,-", desc: "Hudanalyse, produktvejledning og tilpasning af forløb.", unit: "inkl. moms / time" },
+          { title: "Kropsbehandling", price: "fra 85.000,-", desc: "Komplet spa-dag inkl. massage og ansigtsbehandling.", unit: "gennemsnitspris" },
+          { title: "Bryn & Vipper", price: "750,-", desc: "Farvning og retning inkl. plejende serum.", unit: "pr. m2" }
         ].map((p, i) => (
           <Card key={i} className="rounded-none border-stone/10 bg-white hover:shadow-2xl transition-all group overflow-hidden">
             <CardHeader className="text-center pt-10">
@@ -268,10 +268,10 @@ const ServicesList = () => (
           <h2 className="text-5xl mb-12 font-serif">Hvad vi gør <span className="italic">allerbedst</span></h2>
           <div className="space-y-4">
             {[
-              { title: "Facade & Murværk", desc: "Omfugning, reparation af sætningsskader og afrensning." },
-              { title: "Kropspleje", desc: "Fra de små flisereparationer til den helt store drøm." },
-              { title: "Flise & Belægning", desc: "Indkørsler, terrasser og præcisionsarbejde indendørs." },
-              { title: "Totalrenovering", desc: "Vi koordinerer hele dit projekt fra start til slut." }
+              { title: "Hudpleje & Murværk", desc: "Dybderens, anti-age behandlinger og fugtboost tilpasset din hud." },
+              { title: "Kropspleje", desc: "Fra opstrammende massage til dybdegående velvære." },
+              { title: "Vipper & Bryn", desc: "Lash lift, farvning af bryn og perfekt opmåling." },
+              { title: "Brudepakker", desc: "Vi sørger for at du stråler på din store dag." }
             ].map((s, i) => (
               <Accordion type="single" collapsible key={i} className="w-full">
                 <AccordionItem value={`item-${i}`} className="border-b border-stone/10 first:border-t-0 p-0">
@@ -290,11 +290,11 @@ const ServicesList = () => (
         
         <div className="grid grid-cols-2 gap-6">
           <div className="space-y-6">
-            <img src="/modern_facade_1779033331313.png" className="w-full h-[300px] object-cover" alt="Murerarbejde detalje" referrerPolicy="no-referrer" crossOrigin="anonymous" loading="lazy" />
-            <img src="/products_sm.png" className="w-full h-[200px] object-cover" alt="Fliselægning" referrerPolicy="no-referrer" crossOrigin="anonymous" loading="lazy" />
+            <img src="/hero_bg_sm.png" className="w-full h-[300px] object-cover" alt="Ansigtsbehandling detalje" referrerPolicy="no-referrer" crossOrigin="anonymous" loading="lazy" />
+            <img src="/products_sm.png" className="w-full h-[200px] object-cover" alt="Hudplejeprodukter" referrerPolicy="no-referrer" crossOrigin="anonymous" loading="lazy" />
           </div>
           <div className="space-y-6 mt-12">
-            <img src="/products_sm.png" className="w-full h-[200px] object-cover" alt="Badeværelse fliser" referrerPolicy="no-referrer" crossOrigin="anonymous" loading="lazy" />
+            <img src="/products_sm.png" className="w-full h-[200px] object-cover" alt="Kropsbehandling fliser" referrerPolicy="no-referrer" crossOrigin="anonymous" loading="lazy" />
             <img src="/facial_sm.png" className="w-full h-[400px] object-cover" alt="Skønhedspleje" referrerPolicy="no-referrer" crossOrigin="anonymous" loading="lazy" />
           </div>
         </div>
@@ -338,22 +338,22 @@ const Testimonials = () => (
           {
             name: "Maria & Thomas Jensen",
             location: "Østerbro",
-            project: "Totalrenovering af badeværelse",
-            quote: "Fra start til slut var kommunikationen i top. Simon kom personligt forbi til opmåling, og prisen holdt præcis som aftalt. Vores badeværelse er blevet en drøm — og de ryddede endda op efter sig selv hver eneste dag.",
+            project: "Brudepakker af badeværelse",
+            quote: "Fra start til slut var kommunikationen i top. Susanne gav en fantastisk rådgivning. Min hud har aldrig haft det bedre, og hele oplevelsen var bare ren luksus og velvære.",
             stars: 5
           },
           {
             name: "Henrik Møller",
             location: "Gentofte",
-            project: "Facade omfugning",
-            quote: "Jeg havde fået tilbud fra 4 andre murerfirmaer. Susanne Melchiorsen var ikke de billigste, men de var de eneste, der tog sig tid til at forklare præcis hvad der var galt med min facade, og hvorfor. Det skabte tillid. Resultatet er fantastisk.",
+            project: "Hudpleje omfugning",
+            quote: "Jeg har prøvet mange klinikker. Susanne er måske ikke den billigste, men hun tog sig tid til at forklare præcis, hvad min hud manglede. Det skabte enorm tillid. Resultatet er fantastisk.",
             stars: 5
           },
           {
             name: "Sofie Andersen",
             location: "Frederiksberg",
-            project: "Indkørsel i chaussesten",
-            quote: "Christian og hans hold lagde vores nye indkørsel på 3 dage — præcis som lovet. Det er de små detaljer, der imponerer: de beskyttede vores beplantning, og fugerne er helt lige. Vores naboer har allerede spurgt efter deres nummer.",
+            project: "Bryn & Vipper i chaussesten",
+            quote: "Susanne ordnede mine vipper og bryn – præcis som ønsket. Det er de små detaljer, der imponerer: formen er helt perfekt. Mine veninder har allerede spurgt efter hendes nummer.",
             stars: 5
           }
         ].map((review, i) => (
@@ -476,7 +476,7 @@ const BygGarantiSection = () => (
         <div className="relative h-full min-h-[400px] flex items-center justify-center overflow-hidden border border-stone/10">
           <img 
             src="/facial_sm.png" 
-            alt="Murer der glatter fuger ud" 
+            alt="Rolige hænder udfører behandling" 
             className="absolute inset-0 w-full h-full object-cover" 
             loading="lazy"
           />
@@ -539,7 +539,7 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-24">
         <div className="md:col-span-2">
           <Link to="/" className="text-3xl font-serif mb-8 block group" aria-label="Susanne Melchiorsen — Gå til forsiden">
-            Banh <span className="clay-accent">&</span> Banh
+            Susanne <span className="clay-accent">Melchiorsen</span>
           </Link>
           <p className="text-stone/60 text-lg mb-8 max-w-sm font-light">
             Grundlagt på kærlighed til faget og respekt for kunden. Vi leverer håndværk, der holder.
@@ -899,7 +899,7 @@ const ServicesPage = () => (
 
 const ProjectsPage = () => (
   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4 }}>
-    <PageHeader title="Referenceprojekter" subtitle="Vi er kun så gode som vores seneste byggeprojekt. Gå på opdagelse i vores referencer og bliv inspireret." />
+    <PageHeader title="Referenceprojekter" subtitle="Vi er kun så gode som vores seneste skønhedsforløb. Gå på opdagelse i vores referencer og bliv inspireret." />
     <ReferenceProjects />
     <Testimonials />
   </motion.div>
@@ -952,7 +952,7 @@ const ContactPage = () => (
         <div className="space-y-12">
           <div className="relative h-64 md:h-80 w-full overflow-hidden border border-stone/10">
             <img 
-              src="/modern_facade_1779033331313.png" 
+              src="/hero_bg_sm.png" 
               alt="Moderne murstensfacade" 
               className="w-full h-full object-cover" 
               loading="lazy" 
