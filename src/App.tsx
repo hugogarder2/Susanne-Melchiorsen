@@ -117,7 +117,7 @@ const ReferenceProjects = () => (
     <div className="container mx-auto px-4 text-stone">
       <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
         <div className="max-w-2xl">
-          <h2 className="text-4xl md:text-6xl mb-6 font-serif">Bevis kvaliteten, <span className="italic">påstå den ikke</span></h2>
+          <h2 className="text-4xl md:text-6xl mb-6 font-serif">Vores resultater, <span className="italic">din tryghed</span></h2>
           <p className="text-lg text-stone/70">
             Vi gemmer os ikke bag vage løfter. Her er nogle af de projekter, vi er mest stolte af at have udført.
           </p>
@@ -295,7 +295,7 @@ const ServicesList = () => (
           </div>
           <div className="space-y-6 mt-12">
             <img src="/products_sm.png" className="w-full h-[200px] object-cover" alt="Badeværelse fliser" referrerPolicy="no-referrer" crossOrigin="anonymous" loading="lazy" />
-            <img src="/masonry_details_1779033315706.png" className="w-full h-[400px] object-cover" alt="Murer værktøj" referrerPolicy="no-referrer" crossOrigin="anonymous" loading="lazy" />
+            <img src="/facial_sm.png" className="w-full h-[400px] object-cover" alt="Skønhedspleje" referrerPolicy="no-referrer" crossOrigin="anonymous" loading="lazy" />
           </div>
         </div>
       </div>
@@ -437,26 +437,26 @@ const ProcessSection = () => (
   </section>
 );
 
-// --- NEW: BYG Garanti Section (Key insight #5 — Kvalitetsordning) ---
+// --- NEW: Danish Beauty Award Section (Key insight #5 — Kvalitetsordning) ---
 
 const BygGarantiSection = () => (
-  <section className="py-24 bg-sand border-y border-stone/10" aria-label="BYG Garanti">
+  <section className="py-24 bg-sand border-y border-stone/10" aria-label="Danish Beauty Award">
     <div className="container mx-auto px-4 text-stone">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
         <div>
           <Badge variant="outline" className="mb-6 uppercase tracking-[0.2em] text-stone/60 border-stone/20 py-1.5 px-4 font-mono text-[10px]">
             Din tryghed
           </Badge>
-          <h2 className="text-4xl md:text-5xl mb-8 font-serif">Dækket af <span className="italic text-clay-accent">BYG Garanti</span></h2>
+          <h2 className="text-4xl md:text-5xl mb-8 font-serif">Dækket af <span className="italic text-clay-accent">Danish Beauty Award</span></h2>
           <p className="text-lg text-stone/70 mb-8 font-light leading-relaxed">
-            Som medlem af BYG Garanti-ordningen er du som kunde beskyttet, hvis der skulle opstå fejl eller mangler i vores arbejde. Det er din forsikring for, at vi står ved det, vi leverer.
+            Som medlem af Danish Beauty Award-ordningen er du som kunde beskyttet, hvis der skulle opstå fejl eller mangler i vores arbejde. Det er din forsikring for, at vi står ved det, vi leverer.
           </p>
           <div className="space-y-4 mb-10">
             {[
-              "Op til 10 års garanti på udført arbejde",
-              "Uvildig tredjepart håndterer eventuelle tvister",
-              "Dækker både materialer og udførelse",
-              "Gælder alle private byggesager"
+              "Dokumenteret effekt af vores behandlinger",
+              "Udelukkende testede og godkendte produkter",
+              "Rådgivning af certificerede hudterapeuter",
+              "Skræddersyede forløb til alle hudtyper"
             ].map((text, i) => (
               <div key={i} className="flex items-start gap-4">
                 <CheckCircle2 className="w-5 h-5 text-clay-accent mt-0.5 shrink-0" aria-hidden="true" />
@@ -470,12 +470,12 @@ const BygGarantiSection = () => (
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm uppercase tracking-widest font-mono clay-accent hover:underline underline-offset-8"
           >
-            Læs mere om BYG Garanti <ChevronRight className="w-4 h-4" aria-hidden="true" />
+            Læs mere om Danish Beauty Award <ChevronRight className="w-4 h-4" aria-hidden="true" />
           </a>
         </div>
         <div className="relative h-full min-h-[400px] flex items-center justify-center overflow-hidden border border-stone/10">
           <img 
-            src="/masonry_details_1779033315706.png" 
+            src="/facial_sm.png" 
             alt="Murer der glatter fuger ud" 
             className="absolute inset-0 w-full h-full object-cover" 
             loading="lazy"
@@ -495,14 +495,14 @@ const BygGarantiSection = () => (
 // --- NEW: Latest News / Instagram Feed Section ---
 
 const LatestNewsSection = () => (
-  <section className="py-24 bg-white" aria-label="Aktuelt fra byggepladsen">
+  <section className="py-24 bg-white" aria-label="Aktuelt fra klinikken">
     <div className="container mx-auto px-4 text-stone">
       <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-8">
         <div>
           <Badge variant="outline" className="mb-4 uppercase tracking-[0.2em] text-stone/60 border-stone/20 py-1.5 px-4 font-mono text-[10px]">
             Direkte fra hverdagen
           </Badge>
-          <h2 className="text-4xl md:text-5xl mb-4 font-serif">Fra <span className="italic clay-accent">byggepladsen</span></h2>
+          <h2 className="text-4xl md:text-5xl mb-4 font-serif">Fra <span className="italic clay-accent">klinikken</span></h2>
           <p className="text-lg text-stone/60 font-light">Følg med i vores hverdag og se hvad vi arbejder på lige nu.</p>
         </div>
         <a 
@@ -516,13 +516,13 @@ const LatestNewsSection = () => (
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {[
-          "/masonry_details_1779033315706.png",
+          "/facial_sm.png",
           "/facial_sm.png",
           "/products_sm.png",
           "/products_sm.png"
         ].map((img, i) => (
           <div key={i} className="aspect-square relative group overflow-hidden bg-stone/5">
-            <img src={img} alt={`Billede fra byggepladsen ${i+1}`} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" width={400} height={400} />
+            <img src={img} alt={`Billede fra klinikken ${i+1}`} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" width={400} height={400} />
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
               <Instagram className="w-8 h-8 text-white" aria-hidden="true" />
             </div>
@@ -875,7 +875,7 @@ const HomePage = () => (
 const PageHeader = ({ title, subtitle }: { title: string, subtitle: string }) => (
   <div className="relative pt-48 pb-32 border-b border-stone/10 text-center bg-stone overflow-hidden">
     <div className="absolute inset-0 z-0">
-      <img src="/masonry_header_bg_1779033302933.png" alt="" className="w-full h-full object-cover opacity-20" aria-hidden="true" loading="lazy" />
+      <img src="/hero_bg_sm.png" alt="" className="w-full h-full object-cover opacity-20" aria-hidden="true" loading="lazy" />
       <div className="absolute inset-0 bg-stone/90 mix-blend-multiply"></div>
     </div>
     <div className="container mx-auto px-4 max-w-3xl relative z-10 text-white">
