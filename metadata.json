@@ -1,0 +1,8 @@
+{
+  "name": "Susanne Melchiorsen",
+  "description": "Eksklusiv skønhedsklinik i hjertet af København.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
